@@ -28,7 +28,8 @@
   "author": "Maxim Zhukov <maxim.zhukov.dev@gmail.com>",
   "license": "ISC",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "README.md"
   ],
   "bugs": {
     "url": "https://github.com/FSou1/find-focused-element/issues"
