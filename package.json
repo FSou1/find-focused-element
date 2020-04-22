@@ -1,6 +1,6 @@
 {
   "name": "find-focused-element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lib for finding a currently focused html element",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -8,11 +8,11 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "lint": "eslint ./src/*.ts",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
