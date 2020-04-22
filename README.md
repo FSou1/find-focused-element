@@ -2,6 +2,8 @@
 
 This library provides an easy way to get a focused HTML element. 
 
+Demo: https://stackblitz.com/edit/angular-uj2nvt
+
 ## Quick Start
 
 Add it to your project
