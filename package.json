@@ -1,0 +1,49 @@
+{
+  "name": "find-focused-element",
+  "version": "1.0.0",
+  "description": "A lib for finding a currently focused html element",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "lint": "eslint ./src/*.ts",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FSou1/find-focused-element.git"
+  },
+  "keywords": [
+    "find",
+    "focused",
+    "active",
+    "current",
+    "element"
+  ],
+  "author": "Maxim Zhukov <maxim.zhukov.dev@gmail.com>",
+  "license": "ISC",
+  "files": [
+    "lib/**/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/FSou1/find-focused-element/issues"
+  },
+  "homepage": "https://github.com/FSou1/find-focused-element#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/rewire": "^2.5.28",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^25.4.0",
+    "rewire": "^5.0.0",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
+  }
+}
